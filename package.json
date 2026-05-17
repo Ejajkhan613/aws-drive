@@ -1,0 +1,27 @@
+{
+  "name": "aws-glacier-drive",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A local-first archive drive backed by Amazon S3 Glacier storage classes.",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "vite build",
+    "start": "node server/server.js",
+    "serve": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "latest",
+    "@aws-sdk/s3-request-presigner": "latest",
+    "express": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest"
+  }
+}
